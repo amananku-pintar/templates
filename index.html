@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email - Template</title>
+</head>
+<style>
+
+.btn{
+    border: none;
+    padding: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+box-shadow: 5px;
+cursor: pointer;
+}
+
+</style>
+<body>
+    <div style="display: flex;align-items: center;"><button class="btn" id="btn1" onclick="openInNewTab('pintar.html')">Preview Pintar</button> <span style="margin-left: 40px;"><img height="30px" src="https://cdn-icons-png.flaticon.com/512/25/25231.png"/></span></div>
+    <div style="margin: 20px;"></div>
+    <div style="display: flex;align-items: center;"><button class="btn" id="btn1" onclick="openInNewTab('Cakap.html')">Preview Cakap</button> <span style="margin-left: 40px;"><img height="30px" src="https://cdn-icons-png.flaticon.com/512/25/25231.png"/></span></div>
+    <div style="margin: 20px;"></div>
+    <div style="display: flex;align-items: center;"><button class="btn" id="btn1" onclick="openInNewTab('Pro-Digi.html')">Preview Pro-Digi</button> <span style="margin-left: 40px;"><img height="30px" src="https://cdn-icons-png.flaticon.com/512/25/25231.png"/></span></div>
+    <script>
+        function openInNewTab(filename) {
+            window.open(filename, '_blank');
+        }
+    </script>
+</body>
+
+</html>
