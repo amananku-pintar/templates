@@ -15,19 +15,40 @@
 background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
 box-shadow: 5px;
 cursor: pointer;
+color: black;
+}
+.downloadBtn{
+    border: none;
+    padding: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: rgb(234, 4, 103);
+background: radial-gradient(circle, rgb(220, 25, 110) 0%, #ff0471 100%);
+box-shadow: 5px;
+cursor: pointer;
+border-radius: 50px;
+color: white;
 }
 
 </style>
 <body>
-    <div style="display: flex;align-items: center;"><button class="btn" id="btn1" onclick="openInNewTab('pintar.html')">Preview Pintar</button> <span style="margin-left: 40px;"><img height="30px" src="https://cdn-icons-png.flaticon.com/512/25/25231.png"/></span></div>
+    <div style="display: flex;align-items: center;"><button class="btn" id="btn1" onclick="openInNewTab('pintar.html')">Preview Pintar</button> <a target="blank" href="https://github.com/amananku-pintar/templates/blob/main/pintar.html" style="cursor: pointer;"><span style="margin-left: 40px;"><img height="30px" src="https://cdn-icons-png.flaticon.com/512/25/25231.png"/></span></a><button style="margin-left: 20px;" onclick="downloadFile('pintar.html')" class="downloadBtn">Download Pintar.html Template</button></div> 
     <div style="margin: 20px;"></div>
-    <div style="display: flex;align-items: center;"><button class="btn" id="btn1" onclick="openInNewTab('Cakap.html')">Preview Cakap</button> <span style="margin-left: 40px;"><img height="30px" src="https://cdn-icons-png.flaticon.com/512/25/25231.png"/></span></div>
+    <div style="display: flex;align-items: center;"><button class="btn" id="btn1" onclick="openInNewTab('Cakap.html')">Preview Cakap</button> <a target="blank" href="https://github.com/amananku-pintar/templates/blob/main/Cakap.html" style="cursor: pointer;"><span style="margin-left: 40px;"><img height="30px" src="https://cdn-icons-png.flaticon.com/512/25/25231.png"/></span></a></a><button style="margin-left: 20px;" onclick="downloadFile('Cakap.html')" class="downloadBtn">Download Cakap.html Template</button></div>
     <div style="margin: 20px;"></div>
-    <div style="display: flex;align-items: center;"><button class="btn" id="btn1" onclick="openInNewTab('Pro-Digi.html')">Preview Pro-Digi</button> <span style="margin-left: 40px;"><img height="30px" src="https://cdn-icons-png.flaticon.com/512/25/25231.png"/></span></div>
+    <div style="display: flex;align-items: center;"><button class="btn" id="btn1" onclick="openInNewTab('Pro-Digi.html')">Preview Pro-Digi</button> <a target="blank" href="https://github.com/amananku-pintar/templates/blob/main/pro-digi.html" style="cursor: pointer;"><span style="margin-left: 40px;"><img height="30px" src="https://cdn-icons-png.flaticon.com/512/25/25231.png"/></span></a></a><button style="margin-left: 20px;" onclick="downloadFile('pro-digi.html')" class="downloadBtn">Download pro-digi.html Template</button></div>
     <script>
         function openInNewTab(filename) {
             window.open(filename, '_blank');
         }
+
+        function downloadFile(filename, content) {
+  const blob = new Blob([content], { type: 'text/html' });
+  const link = document.createElement('a');
+  link.href = window.URL.createObjectURL(blob);
+  link.download = filename;
+  link.click();
+}
+
     </script>
 </body>
 
