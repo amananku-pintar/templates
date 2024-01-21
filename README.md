@@ -1,4 +1,5 @@
 Send the auto email to user if the product not using our LMS/ LMS used other LP, will be get this email based on provider name
+Index File contain Link For All the path templates
 
 |                  |    |   |   |   |   |   |   |   |   |
 |------------------|----|---|---|---|---|---|---|---|---|
