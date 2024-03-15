@@ -1,4 +1,6 @@
 # LINKS & PREVIEW: 
+
+ticket : https://harukaedu.atlassian.net/browse/SKILLS-261
 1. [PINTAR](https://htmlpreview.github.io/?https://github.com/amananku-pintar/templates/blob/main/1-pintar.html) PlaceHolder {{username}} {{year}}
 2. [CAKALP](https://htmlpreview.github.io/?https://github.com/amananku-pintar/templates/blob/main/2-Cakap.html)  PlaceHolder {{username}} {{year}}
 3. [pro-digi](https://htmlpreview.github.io/?https://github.com/amananku-pintar/templates/blob/main/3-pro-digi.html)  PlaceHolder {{username}} {{year}}
